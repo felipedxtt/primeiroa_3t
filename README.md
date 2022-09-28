@@ -1,6 +1,8 @@
 # Terceiro Trimestre
 
-##Felipe do Vale -Nr. 14
+##Indentificação
+Felipe do Vale -Nr. 14
 
-##HTML,CSS e javascript
+##Conteúdo
+HTML,CSS e javascript
 
