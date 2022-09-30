@@ -1,4 +1,5 @@
 let tabuada = 9;
+let nome = "Felipe"
 
 function escreva(){
     document.write("Tabuada do " + "<br>")
