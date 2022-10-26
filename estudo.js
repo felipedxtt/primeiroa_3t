@@ -5,17 +5,30 @@ function moeda (atual){
 function calcula(){
     let c = document.getElementById ("valor").Value;
     let j = document.getElementById ("juros").Value;
+    let t = document.getElementById ("meses").Value;
     if (!Number(c)){
-        alert("Só Número burrão(a).")
+        alert("Só Número burro(a).")
         document.getElementById("valor").value = "";
         document.getElementById("valor").focus();
         return
     }
-    if (!Number(s)){
-        alert("Só valor numérico no juros burrão(a).")
-        document.getElementById("valor").value = "";
+    if (!Number(j)){
+        alert("Só valor numérico no juros burro(a).")
+        document.getElementById("juros").value = "";
         document.getElementById("juros").focus();
         return
+    }
+    if (!Number(t)){
+        alert("Só valor numérico burro(a).")
+        document.getElementById("meses").value = "";
+        document.getElementById("meses").focus();
+        return
+    }
+    let r = c;
+    for(let m = 1; m <= t; m++){
+        r = c * (1 + (j /100));
+        r = r;
+        document.write("Mês " + m + " - valor: " + moeda(r)+"<br>")
     }
 
     let r = c * (1 + (j/100));
@@ -43,8 +56,5 @@ function calcule(){
     document.getElementById("resultado").innerHTML = r;
 
 }
-
-
-
 
 
