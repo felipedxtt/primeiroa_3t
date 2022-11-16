@@ -65,12 +65,11 @@ for (let m = 1; m <= t; m++) {
     r = c * (1 + (j / 100));
     c = r;
     texto +=  m + " : " + moeda(r) + "<br>"
-   // document.write("Mes " + m + " - valor: " + moeda(r) + "<br>");
 
 }
 document.getElementById("listameses").innerHTML = texto;
 document.getElementById("total").innerHTML = moeda(r);
-//document.write("resultado: " + moeda(r));
+
 }
 
 let op = "";
@@ -101,9 +100,9 @@ function calcule() {
 }
 
 function calculaESG(){
-    let a = 3;
-    let b = -2;
-    let c = -8;
+    let a = document.getElementById("a").value
+    let b = document.getElementById("b").value
+    let c = document.getElementById("c").value
     delta = (b*b) - (4*a*c)
     let raiz;
     let x1,x2;
@@ -120,3 +119,4 @@ raiz = "x1="+x1 + " e x2="+x2;
 
     document.getElementById("raiz").value = raiz; 
 }
+
